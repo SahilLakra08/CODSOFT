@@ -1,3 +1,4 @@
+#TASK 3
 import random
 import string
 
@@ -42,20 +43,15 @@ def generate_password(length):
     # Convert the list to a string
     return ''.join(password)
 
-def main():
-    print("Welcome to the Password Generator!")
-    print("This tool will help you create a strong and random password.")
 
-    # Get the desired password length from the user
-    length = get_password_length()
+print("Welcome to the CodSoft Password Generator!")
+print("This tool will help you create a strong and random password.")
 
-    # Generate the password
-    password = generate_password(length)
+# Get the desired password length from the user
+length = get_password_length()
+# Generate the password
+password = generate_password(length)
+# Display the generated password
+print(f"\nYour CodSoft generated password is: {password}")
+print("Make sure to store it securely!")
 
-    # Display the generated password
-    print(f"\nYour generated password is: {password}")
-    print("Make sure to store it securely!")
-
-# Run the password generator
-if __name__ == "__main__":
-    main()
